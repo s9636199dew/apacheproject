@@ -6,7 +6,7 @@ pipeline{
                 awsfile=credentials('awsfile')
             }
 steps{
-    sh 'ssh -i $awsfile ubuntu@3.21.41.81'
+    sh 'ssh -i $awsfile -o StrictHostKeyChecking=no ubuntu@3.21.41.81'
     
 }
         }
