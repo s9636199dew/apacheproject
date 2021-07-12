@@ -3,6 +3,7 @@ pipeline{
     stages{
         stage ('deploy'){
 steps{
+    sh 'ssh -i monday.pem ubuntu@3.21.41.81'
     
 }
         }
