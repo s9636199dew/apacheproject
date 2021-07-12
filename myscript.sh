@@ -9,4 +9,5 @@ git clone https://github.com/s9636199dew/apacheproject.git
 #copying the index.html
 cp -v apacheproject/index.html /var/www/html
 # restart apache
-systemctl restart apache
+systemctl restart apache2
+
