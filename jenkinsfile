@@ -2,8 +2,11 @@ pipeline{
     agent any
     stages{
         stage ('deploy'){
+            environment{
+                awsfile=credentials('awsfile')
+            }
 steps{
-    sh 'ssh -i monday.pem ubuntu@3.21.41.81'
+    sh 'ssh -i $awsfile ubuntu@3.21.41.81'
     
 }
         }
